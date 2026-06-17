@@ -4,12 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Complete Conveyancing Melbourne — Trusted Conveyancing Experts Since 1989</title>
-<meta name="description" content="Complete Conveyancing & Corporate Services — licensed conveyancers serving Melbourne since 1989. Free 24-hour contract and Section 32 review. Fixed-fee pricing.">
-<link rel="icon" type="image/webp" href="https://www.completeconveyancing.com.au/wp-content/uploads/2024/03/cropped-cropped-complete-conveyancing-Logo-Positive_pn-32x32.webp" sizes="32x32">
-<link rel="icon" type="image/webp" href="https://www.completeconveyancing.com.au/wp-content/uploads/2024/03/cropped-cropped-complete-conveyancing-Logo-Positive_pn-192x192.webp" sizes="192x192">
-<link rel="apple-touch-icon" href="https://www.completeconveyancing.com.au/wp-content/uploads/2024/03/cropped-cropped-complete-conveyancing-Logo-Positive_pn-180x180.webp">
+<meta name="description" content="Complete Conveyancing & Corporate Services — licensed conveyancers serving Melbourne since 1989. 4.9★ rated. Free 24-hour contract and Section 32 review. Fixed-fee pricing.">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap');
 
 /* ── RESET & BASE ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -32,14 +29,17 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 :root {
   --navy: #0047ba;
   --dark-navy: #003380;
+  --deep-navy: #00245e;
   --charcoal: #212529;
   --light-bg: #f7f8f9;
   --gold: #e8b830;
   --gold-hover: #d4a620;
   --white: #ffffff;
-  --border: #e0e3e6;
+  --border: #c5c9cc;
+  --border-light: #e0e3e6;
   --text-muted: #5a6268;
   --star: #f5a623;
+  --dot-inactive: #94999e;
 }
 
 /* ── BUTTONS ── */
@@ -67,8 +67,11 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
   border: 2px solid var(--white);
 }
 .btn-outline:hover { background: var(--white); color: var(--navy); }
-.btn-white { background: var(--white); color: var(--navy); }
-.btn-white:hover { background: #e9ecef; transform: translateY(-1px); box-shadow: 0 4px 14px rgba(0,0,0,0.15); }
+.btn-accent {
+  background: var(--navy);
+  color: var(--white);
+}
+.btn-accent:hover { background: var(--deep-navy); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(0,71,186,0.3); }
 
 /* ── HEADER ── */
 .site-header {
@@ -84,14 +87,14 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0.75rem clamp(1rem, 4vw, 2rem);
+  padding: 0.5rem clamp(1rem, 4vw, 2rem);
 }
-.logo { display: flex; flex-direction: row; align-items: center; gap: 10px; line-height: 1.15; }
-.logo .logo-img { width: 36px; height: auto; flex-shrink: 0; }
-.logo-text { display: flex; flex-direction: column; }
-.logo .brand-top { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: var(--navy); }
-.logo .brand-top span { color: var(--charcoal); font-weight: 500; }
-.logo .brand-sub { font-size: clamp(0.6rem, 1.1vw, 0.7rem); color: var(--text-muted); letter-spacing: 0.5px; margin-top: -1px; }
+.logo { display: flex; align-items: center; gap: 0.6rem; }
+.logo-img { width: 40px; height: 40px; border-radius: 4px; flex-shrink: 0; }
+.logo-text { display: flex; flex-direction: column; line-height: 1.15; }
+.logo-text .brand-top { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: clamp(1rem, 2vw, 1.25rem); color: var(--navy); }
+.logo-text .brand-top span { color: var(--charcoal); font-weight: 500; }
+.logo-text .brand-sub { font-size: clamp(0.55rem, 1vw, 0.65rem); color: var(--text-muted); letter-spacing: 0.3px; margin-top: -1px; }
 .nav-links { display: flex; align-items: center; gap: clamp(1rem, 2.5vw, 2rem); }
 .nav-links a { font-family: 'Archivo', sans-serif; font-weight: 500; font-size: clamp(0.85rem, 1.4vw, 0.95rem); color: var(--charcoal); transition: color 0.2s; }
 .nav-links a:hover { color: var(--navy); }
@@ -106,9 +109,7 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 
 /* ── HERO ── */
 .hero {
-  background:
-    linear-gradient(135deg, rgba(0,51,128,0.88) 0%, rgba(0,71,186,0.82) 50%, rgba(0,85,212,0.78) 100%),
-    url('https://www.completeconveyancing.com.au/wp-content/uploads/2024/05/buyer-and-seller-of-a-property-shaking-hands.jpg') center 30% / cover no-repeat;
+  background: linear-gradient(135deg, rgba(0,36,94,0.92) 0%, rgba(0,71,186,0.85) 50%, rgba(0,85,212,0.78) 100%);
   color: var(--white);
   text-align: center;
   padding: clamp(3.5rem, 9vw, 7rem) clamp(1rem, 4vw, 2rem);
@@ -119,26 +120,20 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.08) 0%, transparent 60%);
-  pointer-events: none;
-}
-.hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: 
-    radial-gradient(circle at 20% 80%, rgba(255,255,255,0.04) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 50%);
+  background: radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.06) 0%, transparent 60%);
   pointer-events: none;
 }
 .hero .container { position: relative; z-index: 1; max-width: 800px; }
 .hero h1 { font-size: clamp(1.8rem, 5vw, 3.2rem); font-weight: 700; margin-bottom: 1rem; letter-spacing: -0.5px; }
 .hero .hero-sub { font-size: clamp(1.05rem, 2.2vw, 1.35rem); font-weight: 300; margin-bottom: 2rem; opacity: 0.92; }
-.hero .hero-stars { color: var(--star); font-size: clamp(0.9rem, 1.5vw, 1rem); margin-bottom: 0.5rem; letter-spacing: 2px; }
+.hero .hero-rating { margin-bottom: 0.75rem; }
+.hero .hero-rating .stars { color: var(--star); font-size: clamp(0.9rem, 1.5vw, 1rem); letter-spacing: 2px; }
+.hero .hero-rating .rating-text { font-size: clamp(0.8rem, 1.3vw, 0.95rem); opacity: 0.85; margin-top: 0.2rem; }
 .hero .hero-cta { margin-top: 0.5rem; }
 .hero .hero-cta .btn { font-size: clamp(0.95rem, 1.7vw, 1.1rem); padding: 0.85em 2.5em; }
-.hero .hero-phone { margin-top: 1.5rem; font-size: clamp(0.85rem, 1.3vw, 0.95rem); opacity: 0.85; }
-.hero .hero-phone strong { color: var(--gold); }
+.hero .hero-phone { margin-top: 1.5rem; font-size: clamp(0.85rem, 1.3vw, 0.95rem); }
+.hero .hero-phone a { color: var(--white); border-bottom: 1px solid rgba(255,255,255,0.3); }
+.hero .hero-phone a:hover { border-bottom-color: var(--white); }
 
 /* ── TRUST BAR ── */
 .trust-bar { background: var(--light-bg); padding: clamp(1.8rem, 3vw, 2.5rem) 0; }
@@ -157,7 +152,7 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.2rem, 2.5vw, 2rem); }
 .service-card {
   background: var(--white);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-light);
   border-radius: 10px;
   padding: clamp(1.5rem, 3vw, 2.2rem);
   text-align: center;
@@ -175,35 +170,91 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 .service-card h3 { font-size: clamp(1rem, 1.5vw, 1.15rem); margin-bottom: 0.6rem; color: var(--charcoal); }
 .service-card p { font-size: clamp(0.85rem, 1.2vw, 0.93rem); color: var(--text-muted); line-height: 1.65; }
 
+/* ── TAGLINE BANNER ── */
+.tagline-banner {
+  background: linear-gradient(135deg, var(--deep-navy), var(--dark-navy));
+  color: var(--white);
+  text-align: center;
+  padding: clamp(2rem, 4vw, 2.8rem) clamp(1rem, 4vw, 2rem);
+  position: relative;
+  overflow: hidden;
+}
+.tagline-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(232,184,48,0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+.tagline-banner .container { position: relative; z-index: 1; }
+.tagline-banner p {
+  font-family: 'Archivo', sans-serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 500;
+  font-style: italic;
+  opacity: 0.92;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
 /* ── ABOUT ── */
 .about { background: var(--light-bg); }
-.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: stretch;
+}
 .about-content h2 { font-size: clamp(1.5rem, 3.2vw, 2rem); margin-bottom: 1.5rem; color: var(--charcoal); }
 .about-list { display: flex; flex-direction: column; gap: 1.1rem; }
 .about-list li { display: flex; align-items: flex-start; gap: 0.8rem; font-size: clamp(0.9rem, 1.3vw, 1rem); }
 .about-list li .check-icon { flex-shrink: 0; width: 22px; height: 22px; color: var(--gold); margin-top: 2px; }
 .about-list li strong { color: var(--navy); }
-.about-image {
+.about-stats {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
-.about-image .about-photo {
-  width: 100%;
-  border-radius: 12px;
-  aspect-ratio: 384/188;
-  object-fit: cover;
-}
-.about-stat {
+.about-stat-card {
   background: linear-gradient(135deg, var(--navy), var(--dark-navy));
   border-radius: 12px;
-  padding: clamp(2rem, 5vw, 3rem);
+  padding: clamp(1.8rem, 4vw, 2.5rem);
   color: var(--white);
   text-align: center;
 }
-.about-image .big-quote { font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1; margin-bottom: 0.5rem; opacity: 0.8; }
-.about-image .stat-number { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: clamp(2.5rem, 6vw, 4rem); color: var(--gold); }
-.about-image .stat-label { font-size: clamp(0.9rem, 1.3vw, 1.05rem); opacity: 0.9; }
+.about-stat-card .stat-number { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: clamp(2.5rem, 6vw, 4rem); color: var(--gold); line-height: 1; }
+.about-stat-card .stat-label { font-size: clamp(0.9rem, 1.3vw, 1rem); opacity: 0.9; margin-top: 0.3rem; }
+.about-stat-card .stat-sub { font-size: clamp(0.8rem, 1.1vw, 0.88rem); opacity: 0.7; margin-top: 0.5rem; }
+.about-testimonial-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: clamp(1.5rem, 3vw, 2rem);
+  position: relative;
+}
+.about-testimonial-card .quote-mark {
+  font-family: 'Georgia', serif;
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--gold);
+  opacity: 0.4;
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+}
+.about-testimonial-card p {
+  font-style: italic;
+  color: var(--charcoal);
+  font-size: clamp(0.88rem, 1.2vw, 0.95rem);
+  line-height: 1.7;
+}
+.about-testimonial-card .attribution {
+  margin-top: 0.8rem;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 0.88rem;
+}
 
 /* ── TESTIMONIALS ── */
 .testimonials { background: var(--white); position: relative; }
@@ -224,7 +275,7 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 .carousel-dots { display: flex; justify-content: center; gap: 10px; margin-top: 1.5rem; }
 .carousel-dots button {
   width: 10px; height: 10px; border-radius: 50%;
-  border: none; background: var(--border); cursor: pointer; transition: background 0.3s, transform 0.3s;
+  border: none; background: var(--dot-inactive); cursor: pointer; transition: background 0.3s, transform 0.3s;
 }
 .carousel-dots button.active { background: var(--navy); transform: scale(1.3); }
 .carousel-dots button:hover { background: var(--navy); }
@@ -232,7 +283,7 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 /* ── FAQ ── */
 .faq { background: var(--light-bg); }
 .faq-list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.8rem; }
-.faq-item { background: var(--white); border-radius: 8px; border: 1px solid var(--border); overflow: hidden; }
+.faq-item { background: var(--white); border-radius: 8px; border: 1px solid var(--border-light); overflow: hidden; }
 .faq-question {
   width: 100%; background: none; border: none; padding: 1.1rem 1.3rem;
   display: flex; justify-content: space-between; align-items: center;
@@ -248,18 +299,25 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 .faq-answer-inner { padding: 0 1.3rem 1.1rem; font-size: clamp(0.85rem, 1.2vw, 0.93rem); color: var(--text-muted); line-height: 1.7; }
 
 /* ── SERVICE AREAS ── */
-.areas { background: var(--white); }
-.areas-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(0.8rem, 1.5vw, 1.2rem); max-width: 800px; margin: 0 auto; }
+.areas { background: var(--light-bg); }
+.areas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: clamp(0.6rem, 1.2vw, 0.9rem); max-width: 900px; margin: 0 auto; }
 .area-badge {
-  background: var(--light-bg); border-radius: 8px; padding: 1rem 1.2rem;
-  text-align: center; font-family: 'Archivo', sans-serif; font-weight: 500;
-  font-size: clamp(0.85rem, 1.2vw, 0.93rem); color: var(--charcoal);
-  transition: background 0.2s, color 0.2s; border: 1px solid transparent;
+  background: var(--white);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  text-align: center;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.85rem, 1.1vw, 0.92rem);
+  color: var(--charcoal);
+  transition: all 0.2s;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
-.area-badge:hover { background: var(--navy); color: var(--white); border-color: var(--navy); }
+.area-badge:hover { background: var(--navy); color: var(--white); border-color: var(--navy); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,71,186,0.15); }
 
 /* ── CONTACT ── */
-.contact { background: var(--light-bg); }
+.contact { background: var(--white); }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); }
 .contact-info h2 { font-size: clamp(1.5rem, 3.2vw, 2rem); margin-bottom: 1rem; color: var(--charcoal); }
 .contact-details { display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0; }
@@ -268,14 +326,15 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 .contact-detail a { color: var(--navy); }
 .contact-detail a:hover { text-decoration: underline; }
 .contact-meta { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.5rem; line-height: 1.6; }
-.contact-form { background: var(--white); border-radius: 10px; padding: clamp(1.5rem, 3vw, 2.5rem); border: 1px solid var(--border); }
+.contact-form { background: var(--light-bg); border-radius: 12px; padding: clamp(1.5rem, 3vw, 2.5rem); border: 1px solid var(--border-light); }
 .contact-form h3 { font-size: clamp(1.1rem, 1.8vw, 1.35rem); margin-bottom: 1.5rem; color: var(--charcoal); }
 .form-group { margin-bottom: 1.1rem; }
 .form-group label { display: block; font-weight: 500; font-size: 0.88rem; margin-bottom: 0.35rem; color: var(--charcoal); }
 .form-group input,
 .form-group textarea {
   width: 100%; padding: 0.75em 1em; border: 1px solid var(--border); border-radius: 6px;
-  font-family: 'Roboto', sans-serif; font-size: 0.93rem; transition: border-color 0.2s; outline: none;
+  font-family: 'Roboto', sans-serif; font-size: 0.93rem; transition: border-color 0.2s, box-shadow 0.2s; outline: none;
+  background: var(--white);
 }
 .form-group input:focus,
 .form-group textarea:focus { border-color: var(--navy); box-shadow: 0 0 0 3px rgba(0,71,186,0.1); }
@@ -283,11 +342,11 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 .form-submit .btn { width: 100%; padding: 0.9em; font-size: 1rem; }
 
 /* ── FOOTER ── */
-.site-footer { background: var(--dark-navy); color: rgba(255,255,255,0.8); padding: clamp(2.5rem, 5vw, 3.5rem) 0 1.5rem; }
+.site-footer { background: var(--deep-navy); color: rgba(255,255,255,0.8); padding: clamp(2.5rem, 5vw, 3.5rem) 0 1.5rem; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: clamp(1.5rem, 3vw, 3rem); margin-bottom: 2rem; }
-.footer-brand .logo .brand-top { color: var(--white); }
-.footer-brand .logo .brand-top span { color: rgba(255,255,255,0.75); }
-.footer-brand .logo .brand-sub { color: rgba(255,255,255,0.55); }
+.footer-brand .logo-text .brand-top { color: var(--white); }
+.footer-brand .logo-text .brand-top span { color: rgba(255,255,255,0.75); }
+.footer-brand .logo-text .brand-sub { color: rgba(255,255,255,0.55); }
 .footer-brand p { font-size: 0.88rem; margin-top: 0.8rem; opacity: 0.7; }
 .footer-links h4 { color: var(--white); font-size: 1rem; margin-bottom: 0.8rem; }
 .footer-links ul { display: flex; flex-direction: column; gap: 0.5rem; }
@@ -302,7 +361,6 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .trust-grid { grid-template-columns: repeat(2, 1fr); row-gap: 1.5rem; }
-  .areas-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
   .menu-toggle { display: flex; }
@@ -324,6 +382,9 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
   .areas-grid { grid-template-columns: repeat(2, 1fr); }
 }
 </style>
+<link rel="icon" href="https://www.completeconveyancing.com.au/wp-content/uploads/2024/03/cropped-cropped-complete-conveyancing-Logo-Positive_pn-32x32.webp" sizes="32x32">
+<link rel="icon" href="https://www.completeconveyancing.com.au/wp-content/uploads/2024/03/cropped-cropped-complete-conveyancing-Logo-Positive_pn-192x192.webp" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.completeconveyancing.com.au/wp-content/uploads/2024/03/cropped-cropped-complete-conveyancing-Logo-Positive_pn-180x180.webp">
 </head>
 <body>
 
@@ -331,7 +392,7 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 <header class="site-header">
   <div class="header-inner">
     <a href="#" class="logo" aria-label="Complete Conveyancing Home">
-      <img src="https://www.completeconveyancing.com.au/wp-content/uploads/2024/03/complete-conveyancing-Logo-Positive_pn.webp" alt="Complete Conveyancing" class="logo-img" width="36" height="29">
+      <img src="https://www.completeconveyancing.com.au/wp-content/uploads/2024/03/complete-conveyancing-Logo-Positive_pn.webp" alt="Complete Conveyancing" class="logo-img" width="40" height="40">
       <span class="logo-text">
         <span class="brand-top">Complete <span>Conveyancing</span></span>
         <span class="brand-sub">&amp; Corporate Services</span>
@@ -343,7 +404,7 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
     <nav class="nav-links" id="navLinks">
       <a href="#services">Services</a>
       <a href="#about">About</a>
-      <a href="#areas">Suburbs</a>
+      <a href="#areas">Areas</a>
       <a href="#contact">Contact</a>
       <span class="nav-cta"><a href="#contact" class="btn btn-primary">Free Quote</a></span>
     </nav>
@@ -353,13 +414,16 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 <!-- ═══════════ HERO ═══════════ -->
 <section class="hero">
   <div class="container">
-    <h1>Melbourne's Trusted Conveyancing Experts Since&nbsp;1989</h1>
-    <div class="hero-stars">★★★★★</div>
-    <p class="hero-sub">Free 24-hour contract and Section&nbsp;32 review. 480+ 5-star reviews.</p>
+    <h1>Melbourne's Trusted Conveyancing<br>Experts Since&nbsp;1989</h1>
+    <div class="hero-rating">
+      <div class="stars">★★★★★</div>
+      <div class="rating-text">4.9 ★ from 191 reviews on Google</div>
+    </div>
+    <p class="hero-sub">Free 24-hour contract and Section&nbsp;32 review. Licensed conveyancers serving three generations of Victorians.</p>
     <div class="hero-cta">
       <a href="#contact" class="btn btn-primary">Get Your Free Quote</a>
     </div>
-    <p class="hero-phone">Or call <strong>(03) 9646 5913</strong></p>
+    <p class="hero-phone">Or call <strong><a href="tel:+61396465913">(03) 9646 5913</a></strong></p>
   </div>
 </section>
 
@@ -374,8 +438,8 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
       </div>
       <div class="trust-item">
         <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <span class="trust-number">480+</span>
-        <span class="trust-label">5-Star Reviews</span>
+        <span class="trust-number">4.9★</span>
+        <span class="trust-label">Google Rating (191 reviews)</span>
       </div>
       <div class="trust-item">
         <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -391,6 +455,13 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
   </div>
 </section>
 
+<!-- ═══════════ TAGLINE BANNER ═══════════ -->
+<section class="tagline-banner">
+  <div class="container">
+    <p>"Proudly serving three generations of purchasers and vendors throughout Victoria — our clients keep coming back."</p>
+  </div>
+</section>
+
 <!-- ═══════════ SERVICES ═══════════ -->
 <section class="services" id="services">
   <div class="container">
@@ -398,37 +469,37 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
       <h2>Our Conveyancing Services</h2>
       <span class="title-accent"></span>
     </div>
-    <p class="section-subtitle">Comprehensive conveyancing solutions tailored to your needs — from contract reviews to settlements, we handle it all with precision and care.</p>
+    <p class="section-subtitle">Complete conveyancing solutions tailored to your needs — from contract reviews to settlement, we handle it all with precision and care.</p>
     <div class="services-grid">
       <a href="#contact" class="service-card">
         <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         <h3>Buying a Property</h3>
-        <p>Expert guidance through every step of your purchase — contract review, searches, and seamless settlement.</p>
+        <p>Expert guidance through every step — contract review, searches, and seamless settlement. Free written contract review included.</p>
       </a>
       <a href="#contact" class="service-card">
         <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
         <h3>Selling a Property</h3>
-        <p>Smooth, stress-free selling with contract preparation, vendor statements, and efficient settlement coordination.</p>
+        <p>Smooth sales with contract preparation, Section&nbsp;32 Vendor Statements, and efficient settlement coordination.</p>
       </a>
       <a href="#contact" class="service-card">
         <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
         <h3>Free Section&nbsp;32 &amp; Contract Reviews</h3>
-        <p>Complimentary 24-hour review of contracts and Section&nbsp;32 statements, so you know exactly what you're signing.</p>
+        <p>Complimentary 24-hour review of contracts and Section&nbsp;32 statements by licensed conveyancers. Know what you're signing.</p>
       </a>
       <a href="#contact" class="service-card">
         <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         <h3>Online Contract &amp; Section&nbsp;32 Preparation</h3>
-        <p>Fast, digital preparation of Contracts of Sale and Section&nbsp;32 Vendor Statements — no paperwork hassle.</p>
+        <p>Fast, digital preparation of Contracts of Sale and Vendor Statements — no paperwork, uploaded directly on the SPEAR platform.</p>
       </a>
       <a href="#contact" class="service-card">
         <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
         <h3>Subdivision Conveyancing</h3>
-        <p>Specialist support for property subdivisions — plan compliance, easements, and title issuance handled professionally.</p>
+        <p>Expert support for subdivisions, easements, NICO transfers, and consolidations lodged via the SPEAR platform with surveyors.</p>
       </a>
       <a href="#contact" class="service-card">
         <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
         <h3>Property Transfers</h3>
-        <p>Smooth transfers of ownership between parties — family transfers, name changes, and off-market transactions.</p>
+        <p>Specialist transfers including matrimonial settlements, trusts, and SMSF property. Expert liaison with the State Revenue Office.</p>
       </a>
     </div>
   </div>
@@ -443,7 +514,11 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
         <ul class="about-list">
           <li>
             <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <span><strong>Licensed Conveyancers</strong> — Fully qualified, registered professionals with deep knowledge of Victorian property law.</span>
+            <span><strong>Licensed Conveyancers</strong> — Fully qualified, registered professionals holding Licence No. 001780L with deep knowledge of Victorian property law.</span>
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Three Generations of Trust</strong> — We've served Melbourne families for over 30&nbsp;years — many clients return generation after generation.</span>
           </li>
           <li>
             <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -455,16 +530,20 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
           </li>
           <li>
             <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <span><strong>Personalised Support</strong> — You'll deal with a dedicated conveyancer who knows your file and is always available.</span>
+            <span><strong>Personalised Support</strong> — You'll deal with a dedicated conveyancer — Mick, Matt or a senior team member — who knows your file end-to-end.</span>
           </li>
         </ul>
       </div>
-      <div class="about-image">
-        <img class="about-photo" src="https://www.completeconveyancing.com.au/wp-content/uploads/2025/02/a-couple-admiring-a-hom-ethey-just-purchased.jpg" alt="Happy homeowners with their new property" loading="lazy" width="768" height="376">
-        <div class="about-stat">
-          <div class="big-quote">"</div>
+      <div class="about-stats">
+        <div class="about-stat-card">
           <div class="stat-number">30+</div>
-          <div class="stat-label">Years serving Melbourne families — over <strong>15,000</strong> successful settlements and counting.</div>
+          <div class="stat-label">Years serving Melbourne families</div>
+          <div class="stat-sub">Over 15,000 successful settlements and counting</div>
+        </div>
+        <div class="about-testimonial-card">
+          <div class="quote-mark">&ldquo;</div>
+          <p>"We cannot thank Mick, Matt and all the team at Complete Conveyancing enough — both of our properties settled on the same day and the process ran smoothly from start to finish. We would not hesitate to use these guys again."</p>
+          <div class="attribution">— Megan G., Port Melbourne</div>
         </div>
       </div>
     </div>
@@ -481,27 +560,39 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
     <div class="testimonial-carousel" id="testimonialCarousel">
       <div class="testimonial-slide active">
         <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-text">"One of the best services I have ever received. The team were professional from start to finish."</p>
-        <div class="testimonial-author">Sarah M.</div>
-        <div class="testimonial-location">Port Melbourne</div>
+        <p class="testimonial-text">"Very professional and responsive. Both properties settled on the same day without any issues. We highly recommend Complete Conveyancing and would not hesitate to use them again."</p>
+        <div class="testimonial-author">Megan Guastella</div>
+        <div class="testimonial-location">Google Review</div>
       </div>
       <div class="testimonial-slide">
         <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-text">"They not only met the settlement date but answered all my questions promptly. Highly recommend."</p>
-        <div class="testimonial-author">James K.</div>
-        <div class="testimonial-location">South Melbourne</div>
+        <p class="testimonial-text">"I have now used their service for the third time on 30-day settlement schedules and found the process quite effortless. Very grateful for the level of attention and availability to communicate."</p>
+        <div class="testimonial-author">S Hahn</div>
+        <div class="testimonial-location">Google Review</div>
       </div>
       <div class="testimonial-slide">
         <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-text">"The legal aspects were handled smoothly with patience and clarity. Reliable and efficient."</p>
-        <div class="testimonial-author">Rachel T.</div>
-        <div class="testimonial-location">St Kilda</div>
+        <p class="testimonial-text">"Matt and the team communicated efficiently and guided me through the process. They are trustworthy, supportive and reliable. Settlement completed on time and faultlessly."</p>
+        <div class="testimonial-author">Eleanor H</div>
+        <div class="testimonial-location">Google Review</div>
       </div>
       <div class="testimonial-slide">
         <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-text">"Professional and helpful from day one. Made the process of selling our investment property smooth and easy."</p>
-        <div class="testimonial-author">Michael &amp; Lisa</div>
-        <div class="testimonial-location">Albert Park</div>
+        <p class="testimonial-text">"Our fourth transaction with Complete Conveyancing. Mick and his team are extremely efficient and helpful with any aspect that comes up. Competitively priced with tremendous follow-up."</p>
+        <div class="testimonial-author">Andrew M</div>
+        <div class="testimonial-location">Google Review</div>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"I've been using Complete Conveyancing for over 20 years, so have my friends. The process of buying a property was smooth, just signed some forms and Mick, Matt and the team handled the rest."</p>
+        <div class="testimonial-author">Ken Jackson</div>
+        <div class="testimonial-location">Google Review</div>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"From the start of the Contract of Sale preparation to the final settlement, Mick Mastromanno and his team were very professional. Quick to respond to all queries — would recommend to anyone."</p>
+        <div class="testimonial-author">P</div>
+        <div class="testimonial-location">Google Review</div>
       </div>
     </div>
     <div class="carousel-dots" id="carouselDots">
@@ -509,6 +600,8 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
       <button aria-label="Testimonial 2"></button>
       <button aria-label="Testimonial 3"></button>
       <button aria-label="Testimonial 4"></button>
+      <button aria-label="Testimonial 5"></button>
+      <button aria-label="Testimonial 6"></button>
     </div>
   </div>
 </section>
@@ -564,10 +657,10 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 <section class="areas" id="areas">
   <div class="container">
     <div class="section-title">
-      <h2>Proudly Serving Melbourne</h2>
+      <h2>Proudly Serving Melbourne &amp; Beyond</h2>
       <span class="title-accent"></span>
     </div>
-    <p class="section-subtitle">Our office is in Port Melbourne, and we help clients across Melbourne's inner suburbs and beyond.</p>
+    <p class="section-subtitle">Our main office is in Port Melbourne, with partner offices in Geelong and Drysdale. We help clients across Melbourne's inner suburbs and throughout Victoria.</p>
     <div class="areas-grid">
       <div class="area-badge">Port Melbourne</div>
       <div class="area-badge">Albert Park</div>
@@ -577,6 +670,14 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
       <div class="area-badge">St Kilda</div>
       <div class="area-badge">South Yarra</div>
       <div class="area-badge">Richmond</div>
+      <div class="area-badge">Prahran</div>
+      <div class="area-badge">Windsor</div>
+      <div class="area-badge">Toorak</div>
+      <div class="area-badge">Armadale</div>
+      <div class="area-badge">Malvern</div>
+      <div class="area-badge">Elwood</div>
+      <div class="area-badge">Carlton</div>
+      <div class="area-badge">Geelong</div>
     </div>
   </div>
 </section>
@@ -587,7 +688,7 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
     <div class="contact-grid">
       <div class="contact-info">
         <h2>Get in Touch</h2>
-        <p style="color:var(--text-muted);margin-bottom:0.5rem;">Ready to get started? Contact us for a free, no-obligation quote. We're here to help make your property transaction smooth and stress-free.</p>
+        <p style="color:var(--text-muted);margin-bottom:0.5rem;">For free, no-obligation advice on your conveyancing matter, contact us today. We're here to help make your property transaction smooth and stress-free.</p>
         <div class="contact-details">
           <div class="contact-detail">
             <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -605,9 +706,13 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
             <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             <span>Mon–Fri 9am–5pm<br>After hours by appointment</span>
           </div>
+          <div class="contact-detail">
+            <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Also serving Geelong &amp; Drysdale<br>Home and office visits available</span>
+          </div>
         </div>
         <div class="contact-meta">
-          <p>ABN 69 644 424 368 &nbsp;|&nbsp; Licence No. 001780L</p>
+          <p>ABN 69 644 424 368 &nbsp;|&nbsp; Licence No. 001780L &nbsp;|&nbsp; <a href="https://search.google.com/local/reviews?placeid=ChIJo8_tMoRn1moR0XcXtFgdZfQ" target="_blank" style="color:var(--navy);">4.9★ on Google (191 reviews)</a></p>
         </div>
       </div>
       <div class="contact-form">
@@ -643,14 +748,13 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="logo">
-          <img src="https://www.completeconveyancing.com.au/wp-content/uploads/2024/03/complete-conveyancing-Logo-Positive_pn.webp" alt="Complete Conveyancing" class="logo-img" width="36" height="29">
+        <a href="#" class="logo" aria-label="Complete Conveyancing Home">
           <span class="logo-text">
-            <span class="brand-top" style="color:var(--white);">Complete <span style="color:rgba(255,255,255,0.75);">Conveyancing</span></span>
-            <span class="brand-sub" style="color:rgba(255,255,255,0.55);">&amp; Corporate Services</span>
+            <span class="brand-top">Complete <span>Conveyancing</span></span>
+            <span class="brand-sub">&amp; Corporate Services</span>
           </span>
-        </div>
-        <p>Licensed conveyancers serving Melbourne since 1989. Trusted by thousands of homeowners for transparent, professional property transactions.</p>
+        </a>
+        <p>Licensed conveyancers serving Melbourne families since 1989. Trusted by three generations of purchasers and vendors for transparent, professional property transactions.</p>
       </div>
       <div class="footer-links">
         <h4>Quick Links</h4>
@@ -669,12 +773,13 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
           <li><a href="tel:+61396465913">(03) 9646 5913</a></li>
           <li><a href="mailto:info@completeconveyancing.com.au">info@completeconveyancing.com.au</a></li>
           <li style="opacity:0.7;font-size:0.85rem;">Building A, Suite 5.2<br>85 Turner Street<br>Port Melbourne VIC 3207</li>
+          <li style="opacity:0.7;font-size:0.85rem;margin-top:0.5rem;">Also at: Geelong &amp; Drysdale</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Complete Conveyancing &amp; Corporate Services</span>
-      <span>ABN 69 644 424 368 &nbsp;|&nbsp; Licence No. 001780L</span>
+      <span>ABN 69 644 424 368 &nbsp;|&nbsp; Licence No. 001780L &nbsp;|&nbsp; 4.9★ Google</span>
     </div>
   </div>
 </footer>
@@ -690,7 +795,6 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
       this.classList.toggle('active');
       navLinks.classList.toggle('open');
     });
-    // Close menu on link click
     navLinks.querySelectorAll('a').forEach(function(link) {
       link.addEventListener('click', function() {
         menuToggle.classList.remove('active');
@@ -705,6 +809,24 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
   let currentSlide = 0;
   let autoRotate;
 
+  /* Height-lock: measure all slides, set min-height */
+  (function() {
+    const track = document.getElementById('testimonialCarousel');
+    if (!track || !slides.length) return;
+    let maxH = 0;
+    slides.forEach(function(s) {
+      s.style.position = 'relative';
+      s.style.visibility = 'visible';
+      s.style.opacity = '1';
+      const h = s.offsetHeight;
+      if (h > maxH) maxH = h;
+      s.style.position = '';
+      s.style.visibility = '';
+      s.style.opacity = '';
+    });
+    track.style.minHeight = (maxH + 24) + 'px';
+  })();
+
   function showSlide(index) {
     slides.forEach(function(s, i) { s.classList.toggle('active', i === index); });
     dots.forEach(function(d, i) { d.classList.toggle('active', i === index); });
@@ -717,7 +839,7 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 
   function startAutoRotate() {
     stopAutoRotate();
-    autoRotate = setInterval(nextSlide, 5000);
+    if (slides.length > 1) autoRotate = setInterval(nextSlide, 5000);
   }
 
   function stopAutoRotate() {
@@ -734,7 +856,6 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 
   if (slides.length > 1) startAutoRotate();
 
-  // Pause on hover
   const carousel = document.getElementById('testimonialCarousel');
   if (carousel) {
     carousel.addEventListener('mouseenter', stopAutoRotate);
@@ -748,24 +869,22 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
     if (!questionBtn) return;
     questionBtn.addEventListener('click', function() {
       const isOpen = item.classList.contains('open');
-      // Close all
       faqItems.forEach(function(fi) { fi.classList.remove('open'); });
-      // Open clicked (unless it was already open)
       if (!isOpen) item.classList.add('open');
     });
   });
 
-  /* ── Form Submission (demo) ── */
+  /* ── Form Submission ── */
   const form = document.getElementById('contactForm');
   if (form) {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
-      alert('Thank you for your enquiry! This is a concept site — in production, your message would be sent to info@completeconveyancing.com.au. We'll be in touch shortly.');
+      alert('Thank you for your enquiry! This is a concept site — in production, your message would be sent to info@completeconveyancing.com.au. We\'ll be in touch shortly.');
       form.reset();
     });
   }
 
-  /* ── Smooth scroll for older browsers ── */
+  /* ── Smooth scroll ── */
   document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
     anchor.addEventListener('click', function(e) {
       var targetId = this.getAttribute('href');
