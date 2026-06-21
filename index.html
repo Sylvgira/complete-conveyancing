@@ -203,6 +203,23 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
 .about-image .stat-number { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: clamp(2.5rem, 6vw, 4rem); color: var(--white); }
 .about-image .stat-label { font-size: clamp(0.9rem, 1.3vw, 1.05rem); opacity: 0.9; }
 
+/* ── WHY CONVEYANCER ── */
+.why-conveyancer { background: var(--white); }
+.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.why-content h2 { font-size: clamp(1.5rem, 3.2vw, 2rem); margin-bottom: 1.2rem; color: var(--charcoal); }
+.why-content p { font-size: clamp(0.9rem, 1.3vw, 1rem); color: var(--text-muted); margin-bottom: 1rem; line-height: 1.7; }
+.why-highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.why-highlight {
+  background: var(--light-bg);
+  border-radius: 8px;
+  padding: 1.2rem;
+  text-align: center;
+  border: 1px solid var(--border);
+}
+.why-highlight .hl-icon { width: 32px; height: 32px; color: var(--navy); margin: 0 auto 0.5rem; }
+.why-highlight .hl-title { font-family: 'Archivo', sans-serif; font-weight: 600; font-size: 0.95rem; color: var(--charcoal); margin-bottom: 0.3rem; }
+.why-highlight .hl-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; }
+
 /* ── TESTIMONIALS ── */
 .testimonials { background: var(--white); position: relative; }
 .testimonial-carousel { position: relative; max-width: 750px; margin: 0 auto; min-height: 180px; }
@@ -300,7 +317,8 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .trust-grid { grid-template-columns: repeat(2, 1fr); row-gap: 1.5rem; }
-  .areas-grid { grid-template-columns: repeat(2, 1fr); }
+  .areas-grid { grid-template-columns: repeat(3, 1fr); }
+  .why-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
   .menu-toggle { display: flex; }
@@ -319,7 +337,8 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
   .trust-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
-  .areas-grid { grid-template-columns: repeat(2, 1fr); }
+  .areas-grid { grid-template-columns: repeat(3, 1fr); }
+  .why-highlights { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -400,32 +419,32 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
       <a href="#contact" class="service-card">
         <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         <h3>Buying a Property</h3>
-        <p>Expert guidance through every step of your purchase — contract review, searches, and seamless settlement.</p>
+        <p>Expert guidance through every step of your purchase — preliminary advice, contract reviews, and seamless settlement coordination.</p>
       </a>
       <a href="#contact" class="service-card">
         <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
         <h3>Selling a Property</h3>
-        <p>Smooth, stress-free selling with contract preparation, vendor statements, and efficient settlement coordination.</p>
+        <p>Smooth, stress-free selling with contract preparation, vendor statements, and efficient settlement. We handle all property types — vacant land, residential, serviced apartments, commercial, and industrial.</p>
       </a>
       <a href="#contact" class="service-card">
         <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
         <h3>Free Section&nbsp;32 &amp; Contract Reviews</h3>
-        <p>Complimentary 24-hour review of contracts and Section&nbsp;32 statements, so you know exactly what you're signing.</p>
+        <p>Complimentary 24-hour review of contracts and Section&nbsp;32 statements with a written report — so you know exactly what you're signing. Don't make a mistake you can't undo — contact us first.</p>
       </a>
       <a href="#contact" class="service-card">
         <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         <h3>Online Contract &amp; Section&nbsp;32 Preparation</h3>
-        <p>Fast, digital preparation of Contracts of Sale and Section&nbsp;32 Vendor Statements — no paperwork hassle.</p>
+        <p>Build your Section&nbsp;32 Vendor Statement online — quick, easy, and cost effective. No appointments, no paperwork hassle, no stress.</p>
       </a>
       <a href="#contact" class="service-card">
         <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
         <h3>Subdivision Conveyancing</h3>
-        <p>Specialist support for property subdivisions — plan compliance, easements, and title issuance handled professionally.</p>
+        <p>Expert subdivision conveyancing with 30+ years' experience — plan compliance, easements, and title issuance. Seamless process from document prep to settlement.</p>
       </a>
       <a href="#contact" class="service-card">
         <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
         <h3>Property Transfers</h3>
-        <p>Smooth transfers of ownership between parties — family transfers, name changes, and off-market transactions.</p>
+        <p>Simplify property gifting, estate planning, and ownership changes. Clear process, free advice, hassle-free service for family transfers and off-market transactions.</p>
       </a>
     </div>
   </div>
@@ -460,6 +479,44 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
         <div class="about-stat">
           <div class="stat-number">30+</div>
           <div class="stat-label">Years serving Melbourne families — over <strong>15,000</strong> successful settlements and counting.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ WHY A CONVEYANCER ═══════════ -->
+<section class="why-conveyancer" id="why">
+  <div class="container">
+    <div class="section-title">
+      <h2>Why Choose a Licensed Conveyancer?</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-content">
+        <p>Conveyancers are experts in conducting the legal arrangements required to transfer property and to help clients with property-related issues. In Victoria, conveyancers are required to be licensed and insured — that guarantees our work.</p>
+        <p>Conveyancers are invaluable in providing clients with independent and accurate advice on all things property-related. We regularly work together with bankers, mortgage brokers, real estate agents, property managers, owners corporations, buyers advocates, and family lawyers to ensure every transaction runs smoothly.</p>
+        <p>Whether you're buying or selling anywhere in Victoria, our dedicated team handles all end-to-end conveyancing requirements with meticulous attention to detail. We offer comprehensive advice, transparent communication, and competitive rates.</p>
+      </div>
+      <div class="why-highlights">
+        <div class="why-highlight">
+          <svg class="hl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div class="hl-title">Licensed &amp; Insured</div>
+          <div class="hl-desc">Fully licensed under the Conveyancers Act 2006 with professional indemnity insurance.</div>
+        </div>
+        <div class="why-highlight">
+          <svg class="hl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <div class="hl-title">Free Contract Review</div>
+          <div class="hl-desc">Written report on your Section&nbsp;32 and contract within 24 hours — completely free.</div>
+        </div>
+        <div class="why-highlight">
+          <svg class="hl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div class="hl-title">30+ Years Experience</div>
+          <div class="hl-desc">Over 15,000 successful settlements across Melbourne and throughout Victoria.</div>
+        </div>
+        <div class="why-highlight">
+          <svg class="hl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+          <div class="hl-title">PEXA Certified</div>
+          <div class="hl-desc">Digital settlements via PEXA — faster, more secure, and paper-free.</div>
         </div>
       </div>
     </div>
@@ -569,6 +626,10 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
       <div class="area-badge">St Kilda</div>
       <div class="area-badge">South Yarra</div>
       <div class="area-badge">Richmond</div>
+      <div class="area-badge">Southbank</div>
+      <div class="area-badge">East Melbourne</div>
+      <div class="area-badge">Carlton</div>
+      <div class="area-badge">Prahran</div>
     </div>
   </div>
 </section>
@@ -591,7 +652,15 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
           </div>
           <div class="contact-detail">
             <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <a href="tel:+61396465913">(03) 9646 5913</a>
+            <a href="tel:+613****5913">(03) 9646 5913</a> <span style="color:var(--text-muted);font-size:0.85rem;">— Port Melbourne</span>
+          </div>
+          <div class="contact-detail">
+            <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+613****3230">(03) 5222 3230</a> <span style="color:var(--text-muted);font-size:0.85rem;">— Geelong</span>
+          </div>
+          <div class="contact-detail">
+            <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+613****0299">(03) 9500 0299</a> <span style="color:var(--text-muted);font-size:0.85rem;">— Mobile Service</span>
           </div>
           <div class="contact-detail">
             <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -647,6 +716,7 @@ section { padding: clamp(3rem, 7vw, 5rem) 0; }
           </span>
         </div>
         <p>Licensed conveyancers serving Melbourne since 1989. Trusted by thousands of homeowners for transparent, professional property transactions.</p>
+        <p style="font-size:0.8rem;opacity:0.55;margin-top:0.5rem;">Part of the Complete Conveyancing group — also serving Geelong at <strong style="color:rgba(255,255,255,0.7);">conveyancinggeelong.com.au</strong> and Melbourne metro via <strong style="color:rgba(255,255,255,0.7);">conveyancingprofessionals.com.au</strong></p>
       </div>
       <div class="footer-links">
         <h4>Quick Links</h4>
