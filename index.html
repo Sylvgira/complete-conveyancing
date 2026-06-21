@@ -19,7 +19,7 @@
   --color-ink: #000000;
   --color-pure-white: #ffffff;
   --color-parchment: #fdfdf7;
-  --color-warm-sand: #f5f2de;
+  --color-warm-sand: #eeede8;
   --color-driftwood: #e7e3e1;
   --color-ash: #d3d3d3;
   --color-stone: #999999;
@@ -70,7 +70,16 @@ section { padding: var(--section-gap) 0; }
 .menu-toggle.active span:nth-child(2) { opacity: 0; }
 .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-.hero { background: var(--color-ink); color: var(--color-pure-white); text-align: center; padding: clamp(5rem, 12vw, 9rem) clamp(1.5rem, 4vw, 2.5rem); position: relative; overflow: hidden; }
+.hero {
+  background: 
+    linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.88)),
+    url('https://upload.wikimedia.org/wikipedia/commons/2/24/Aerial_panorama_of_Melbourne%27s_skyline_from_Carlton_North._September_2023.jpg') center 40% / cover no-repeat;
+  color: var(--color-pure-white);
+  text-align: center;
+  padding: clamp(5rem, 12vw, 9rem) clamp(1.5rem, 4vw, 2.5rem);
+  position: relative;
+  overflow: hidden;
+}
 .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 30%, rgba(0,150,247,0.12) 0%, transparent 60%), radial-gradient(ellipse at 80% 80%, rgba(255,64,0,0.06) 0%, transparent 50%); pointer-events: none; }
 .hero .container { position: relative; z-index: 1; max-width: 800px; }
 .hero h1 { font-size: clamp(2.2rem, 6vw, 3.75rem); font-weight: 300; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.5rem; }
